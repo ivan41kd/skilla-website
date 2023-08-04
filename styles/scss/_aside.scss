@@ -1,0 +1,98 @@
+.aside {
+  background: #091336;
+  padding: 20px 0px 0px;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  height: 100vh;
+
+  &__logo {
+    margin-bottom: 32px;
+    padding-left: 12px;
+  }
+  &__list {
+    display: grid;
+    grid-template-rows: repeat(10, 52px);
+    margin-bottom: 64px;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: 15% 1fr;
+    transition: 0.3s;
+    padding: 12px;
+    align-items: center;
+    cursor: pointer;
+    &:hover {
+      background: rgba(216, 228, 251, 0.32);
+      transition: 0.3s;
+    }
+
+    &:hover .aside__link {
+      color: #fff;
+      transition: 0.3s;
+    }
+  }
+
+  &__link {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.6);
+    display: flex;
+    width: 240px;
+    transition: 0.3s;
+  }
+
+  &__buttons{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  &__icon {
+    margin-right: 12px;
+    width: 24px;
+    height: 24px;
+  }
+
+  &__add {
+    font-family: "SF Pro Display", sans-serif;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 148%;
+    border-radius: 4px;
+    background: #005ff8;
+    padding: 13px 20px 14px 24px;
+    display: flex;
+    gap: 17px;
+    margin-bottom: 32px;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    width: 100%;
+    &:hover {
+      background: #274bc8;
+    }
+  }
+  &__pay {
+    font-family: "SF Pro Display", sans-serif;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 148%;
+    border-radius: 4px;
+    background: #005ff8;
+    padding: 11px 20px 11px 65px;
+    display: flex;
+    gap: 31px;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    width: 100%;
+    &:hover {
+      background: #274bc8;
+      transition: 0.3s;
+    }
+  }
+}

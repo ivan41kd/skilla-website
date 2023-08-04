@@ -1,0 +1,120 @@
+.content {
+  padding: 21px 120px 0px 120px;
+  background: #f1f4f9;
+  &__wrapper {
+    color: rgba(94, 119, 147, 1);
+    margin-bottom: 20px;
+  }
+
+  &__form {
+    align-items: center;
+    display: flex;
+    position: relative;
+  }
+
+  &__search-input {
+    padding: 14px 0px 14px 30px;
+    font-size: 14px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    &:focus {
+      outline: 1px solid rgba(0, 44, 251, 1);
+      border-radius: 48px;
+    }
+
+    &:focus + .content__search-icon {
+      display: none;
+    }
+
+    &::placeholder {
+      font-family: "SF Pro Display", sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 140%;
+      color: rgba(94, 119, 147, 1);
+      margin-left: 20px;
+    }
+  }
+
+  &__search-icon {
+    position: absolute;
+    bottom: 35%;
+  }
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__filter-list {
+    position: relative;
+  }
+
+  &__filter-item {
+    display: flex;
+    ::after {
+      content: url(../../img/icons/arrow-down.svg);
+      top: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      background-color: transparent;
+    }
+  }
+
+  &__filter-name {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 148%;
+    color: #5e7793;
+    opacity: 0.87;
+  }
+
+  &__arrow-button {
+    width: 18px;
+    height: 21px;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: right;
+    margin-bottom: 34px;
+  }
+
+  &__calendar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  &__balance {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 148%;
+    color: #899cb1;
+    margin-right: 10px;
+  }
+
+  &__balance-wrapper {
+    display: flex;
+    align-items: center;
+    border-radius: 48px;
+    background: #fff;
+    padding: 8px 12px;
+    margin-right: 48px;
+  }
+
+  &__balance-amount {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 148%;
+    color: #122945;
+  }
+
+  &__filter-list {
+    display: flex;
+    gap: 32px;
+  }
+}

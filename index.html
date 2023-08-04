@@ -1,0 +1,1166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skilla IS</title>
+    <link
+      href="https://fonts.cdnfonts.com/css/sf-pro-display"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/scss/style.css" />
+  </head>
+  <body>
+    <!-- Aside -->
+    <aside class="aside">
+      <img src="./img/aside/logo.svg" alt="logo" class="aside__logo" />
+      <div class="aside__list">
+        <div class="aside__content">
+          <a href="#" class="aside__link">
+            <img
+              src="./img/aside/chart-timeline-variant.svg"
+              alt="chart-timeline-variant-icon"
+              class="aside__icon"
+            />Итоги</a
+          >
+        </div>
+        <div class="aside__content">
+          <a href="#" class="aside__link">
+            <img
+              src="./img/aside/orders-24px.svg"
+              alt="icon"
+              class="aside__icon"
+            />Заказы</a
+          >
+        </div>
+        <div class="aside__content">
+          <a href="#" class="aside__link">
+            <img
+              src="./img/aside/mail_outline-24px.svg"
+              alt="icon"
+              class="aside__icon"
+            />Сообщения</a
+          >
+        </div>
+        <div class="aside__content">
+          <a href="#" class="aside__link">
+            <img
+              src="./img/aside/calls-24px.svg"
+              alt="icon"
+              class="aside__icon"
+            />Звонки</a
+          >
+        </div>
+        <div class="aside__content">
+          <a href="#" class="aside__link">
+            <img
+              src="./img/aside/people-24px.svg"
+              alt="icon"
+              class="aside__icon"
+            />Контрагенты</a
+          >
+        </div>
+        <div class="aside__content">
+          <a href="#" class="aside__link">
+            <img
+              src="./img/aside/documents-24px.svg"
+              alt="icon"
+              class="aside__icon"
+            />Документы</a
+          >
+        </div>
+        <div class="aside__content">
+          <a href="#" class="aside__link">
+            <img
+              src="./img/aside/performer.svg"
+              alt="icon"
+              class="aside__icon"
+            />Исполнители</a
+          >
+        </div>
+        <div class="aside__content">
+          <a href="#" class="aside__link">
+            <img
+              src="./img/aside/brief.svg"
+              alt="icon"
+              class="aside__icon"
+            />Отчеты</a
+          >
+        </div>
+        <div class="aside__content">
+          <a href="#" class="aside__link">
+            <img
+              src="./img/aside/local-library.svg"
+              alt="icon"
+              class="aside__icon"
+            />База знаний</a
+          >
+        </div>
+        <div class="aside__content">
+          <a href="#" class="aside__link">
+            <img
+              src="./img/aside/settings-24px.svg"
+              alt="icon"
+              class="aside__icon"
+            />Настройки</a
+          >
+        </div>
+      </div>
+      <div class="aside__buttons">
+        <button class="aside__add">
+          Добавить заказ
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+          >
+            <path
+              d="M12 0C5.376 0 0 5.376 0 12C0 18.624 5.376 24 12 24C18.624 24 24 18.624 24 12C24 5.376 18.624 0 12 0ZM18 13.2H13.2V18H10.8V13.2H6V10.8H10.8V6H13.2V10.8H18V13.2Z"
+              fill="#D8E4FB"
+              fill-opacity="0.56"
+            />
+          </svg>
+        </button>
+        <button class="aside__pay">
+          Оплата
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            viewBox="0 0 30 30"
+            fill="none"
+          >
+            <g clip-path="url(#clip0_17066_3074)">
+              <path
+                d="M15 2.5C8.1 2.5 2.5 8.1 2.5 15C2.5 21.9 8.1 27.5 15 27.5C21.9 27.5 27.5 21.9 27.5 15C27.5 8.1 21.9 2.5 15 2.5ZM16.25 21.25H13.75V18.75H16.25V21.25ZM16.25 16.25H13.75V8.75H16.25V16.25Z"
+                fill="#D8E4FB"
+                fill-opacity="0.56"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_17066_3074">
+                <rect width="30" height="30" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        </button>
+      </div>
+    </aside>
+    <!-- Main -->
+    <main class="main">
+      <!-- Header -->
+      <header class="header">
+        <div class="container">
+          <div class="header__wrapper">
+            <div class="header__left">
+              <p class="header__date">Среда, 13 окт</p>
+              <div class="header__progress">
+                <p class="header__total">
+                  Новые звонки
+                  <span class="header__number-green">20 из 30 шт</span>
+                </p>
+                <div class="header__bar"></div>
+              </div>
+              <div class="header__progress">
+                <p class="header__total">
+                  Качество разговоров
+                  <span class="header__number-yellow">40%</span>
+                </p>
+                <div class="header__bar bar-yellow"></div>
+              </div>
+              <div class="header__progress">
+                <p class="header__total">
+                  Конверсия в заказ <span class="header__number-red">67%</span>
+                </p>
+                <div class="header__bar bar-red"></div>
+              </div>
+            </div>
+            <button class="header__icon">
+              <img
+                src="./img/header/basic search.svg"
+                alt="search"
+                class="header__search-icon"
+              />
+            </button>
+            <div class="header__right">
+              <div class="header__username">
+                <p class="header__name">ИП Сидорова Александра Михайловна</p>
+                <button class="header__arrow">
+                  <img src="./img/icons/arrow-down.svg" alt="select" />
+                </button>
+              </div>
+              <div class="header__user">
+                <img
+                  src="./img/header/header-avatar.png"
+                  alt="avatar"
+                  class="header__avatar"
+                />
+                <button class="header__arrow">
+                  <img src="./img/icons/arrow-down.svg" alt="select" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- Content -->
+      <section class="content">
+        <div class="container">
+          <div class="content__wrapper">
+            <div class="content__top">
+              <div class="content__balance-wrapper">
+                <p class="content__balance">
+                  Баланс:
+                  <span class="content__balance-amount">272₽</span>
+                </p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  class="content__balance-icon"
+                >
+                  <path
+                    d="M12 0C5.376 0 0 5.376 0 12C0 18.624 5.376 24 12 24C18.624 24 24 18.624 24 12C24 5.376 18.624 0 12 0ZM18 13.2H13.2V18H10.8V13.2H6V10.8H10.8V6H13.2V10.8H18V13.2Z"
+                    fill="#005FF8"
+                  />
+                </svg>
+              </div>
+
+              <div class="content__calendar">
+                <button class="content__calendar-arrow">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="24"
+                    viewBox="0 0 16 24"
+                    fill="none"
+                  >
+                    <g clip-path="url(#clip0_17119_442)">
+                      <path
+                        d="M6.175 15.825L2.35833 12L6.175 8.175L5 7L0 12L5 17L6.175 15.825Z"
+                        fill="#ADBFDF"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_17119_442">
+                        <rect width="16" height="24" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </button>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="18"
+                  viewBox="0 0 16 18"
+                  fill="none"
+                  class="content__calendar-icon"
+                >
+                  <path
+                    d="M14.4 1.63636H13.6V0H12V1.63636H4V0H2.4V1.63636H1.6C0.72 1.63636 0 2.37273 0 3.27273V16.3636C0 17.2636 0.72 18 1.6 18H14.4C15.28 18 16 17.2636 16 16.3636V3.27273C16 2.37273 15.28 1.63636 14.4 1.63636ZM14.4 16.3636H1.6V5.72727H14.4V16.3636Z"
+                    fill="#ADBFDF"
+                  />
+                </svg>
+                <p class="content__calendar-day">3 дня</p>
+                <button class="content__calendar-arrow">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="17"
+                    height="24"
+                    viewBox="0 0 17 24"
+                    fill="none"
+                  >
+                    <g clip-path="url(#clip0_17119_448)">
+                      <path
+                        d="M9.58984 15.825L13.4065 12L9.58984 8.175L10.7648 7L15.7648 12L10.7648 17L9.58984 15.825Z"
+                        fill="#ADBFDF"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_17119_448">
+                        <rect width="17" height="24" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="content__bottom">
+              <div class="content__form">
+                <button class="content__submit">
+                  <img
+                    src="./img/icons/content-submit.svg"
+                    alt="search"
+                    class="content__search-icon"
+                  />
+                </button>
+                <input
+                  type="text"
+                  name="search"
+                  id=""
+                  class="content__search-input"
+                  placeholder="Поиск по звонкам"
+                />
+              </div>
+              <div class="content__filter-list">
+                <select class="content__filter-item">
+                  <option class="content__filter-name">Все типы</option>
+                  <option class="content__filter-name">Входящие</option>
+                </select>
+                <select class="content__filter-item">
+                  <option class="content__filter-name">Все сотрудники</option>
+                  <option class="content__filter-name">Константин К.</option>
+                  <option class="content__filter-name">Константин К.</option>
+                </select>
+                <select class="content__filter-item">
+                  <option class="content__filter-name">Все сотрудники</option>
+                  <option class="content__filter-name">Константин К.</option>
+                  <option class="content__filter-name">Константин К.</option>
+                </select>
+                <select class="content__filter-item">
+                  <option class="content__filter-name">Все сотрудники</option>
+                  <option class="content__filter-name">Константин К.</option>
+                  <option class="content__filter-name">Константин К.</option>
+                </select>
+                <select class="content__filter-item">
+                  <option class="content__filter-name">Все сотрудники</option>
+                  <option class="content__filter-name">Константин К.</option>
+                  <option class="content__filter-name">Константин К.</option>
+                </select>
+                <select class="content__filter-item">
+                  <option class="content__filter-name">Все сотрудники</option>
+                  <option class="content__filter-name">Константин К.</option>
+                  <option class="content__filter-name">Константин К.</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <section class="calls">
+            <div class="calls__container container">
+              <div class="calls__filter">
+                <p class="calls__filter-item">Тип</p>
+                <p class="calls__filter-item">Время</p>
+                <p class="calls__filter-item">Сотрудник</p>
+                <p class="calls__filter-item">Звонок</p>
+                <p class="calls__filter-item">Источник</p>
+                <p class="calls__filter-item">Оценка</p>
+                <p class="calls__filter-item">Длительность</p>
+              </div>
+              <div class="calls__filter">
+                <img
+                  src="./img/icons/blue-call.svg"
+                  alt="call"
+                  class="calls_icon"
+                />
+                <p class="calls__item">19:00</p>
+                <img
+                  src="./img/calls/avatar.png"
+                  alt="calls__user"
+                  class="calls__user"
+                />
+                <p class="calls__item">+7 (987) 567-17-12</p>
+                <p class="calls__source">Rabota.ru</p>
+                <div class="calls__review">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="28"
+                    height="8"
+                    viewBox="0 0 28 8"
+                    fill="none"
+                    class="calls__review-circles"
+                  >
+                    <circle cx="4" cy="4" r="4" fill="#28A879" />
+                    <circle cx="14" cy="4" r="4" fill="#28A879" />
+                    <circle cx="24" cy="4" r="4" fill="#28A879" />
+                  </svg>
+                  <p class="calls__review-status-great">Отлично</p>
+                </div>
+                <p class="calls__item">12:06</p>
+              </div>
+              <div class="calls__filter">
+                <img
+                  src="./img/icons/green-call.svg"
+                  alt="call"
+                  class="calls_icon"
+                />
+                <p class="calls__item">18:00</p>
+                <img
+                  src="./img/calls/avatar.png"
+                  alt="calls__user"
+                  class="calls__user"
+                />
+                <p class="calls__item">+7 (987) 555-12-82</p>
+                <span class="calls__empty"></span>
+                <button class="calls__recognize">Распознать</button>
+                <p class="calls__item">12:06</p>
+              </div>
+              <div class="calls__filter">
+                <img
+                  src="./img/icons/green-call.svg"
+                  alt="call"
+                  class="calls_icon"
+                />
+                <p class="calls__item">17:50</p>
+                <div class="calls__info">
+                  <img
+                    src="./img/calls/avatar.png"
+                    alt="calls__user"
+                    class="calls__user"
+                  />
+                  <img src="./img/icons/web.svg" alt="web" class="calls__web" />
+                </div>
+                <p class="calls__item">+7 (987) 567-17-12</p>
+                <span class="calls__empty"></span>
+                <button class="calls__recognize">Распознать</button>
+                <p class="calls__item">12:06</p>
+              </div>
+              <div class="calls__filter">
+                <img
+                  src="./img/icons/green-call.svg"
+                  alt="call"
+                  class="calls_icon"
+                />
+                <p class="calls__item">17:07</p>
+                <img
+                  src="./img/calls/avatar.png"
+                  alt="calls__user"
+                  class="calls__user"
+                />
+                <p class="calls__item">+7 (987) 556-12-18</p>
+                <span class="calls__empty"></span>
+                <p class="calls__script">Скрипт не использован</p>
+              </div>
+              <div class="calls__filter">
+                <img
+                  src="./img/icons/red-call.svg"
+                  alt="call"
+                  class="calls_icon"
+                />
+                <p class="calls__item">16:45</p>
+                <div class="calls__info">
+                  <img
+                    src="./img/calls/avatar.png"
+                    alt="calls__user"
+                    class="calls__user"
+                  />
+                  <img src="./img/icons/web.svg" alt="web" class="calls__web" />
+                </div>
+                <p class="calls__item">+7 (987) 345-17-12</p>
+              </div>
+              <div class="calls__filter">
+                <img
+                  src="./img/icons/blue-call.svg"
+                  alt="call"
+                  class="calls_icon"
+                />
+                <p class="calls__item">16:33</p>
+                <img
+                  src="./img/calls/avatar2.png"
+                  alt="calls__user"
+                  class="calls__user"
+                />
+                <p class="calls__item">+7 (987) 587-16-18</p>
+                <p class="calls__source">Rabota.ru</p>
+                <div class="calls__review">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="28"
+                    height="8"
+                    viewBox="0 0 28 8"
+                    fill="none"
+                    class="calls__review-circles"
+                  >
+                    <circle cx="4" cy="4" r="4" fill="#ADBFDF" />
+                    <circle cx="14" cy="4" r="4" fill="#ADBFDF" />
+                  </svg>
+                  <p class="calls__review-status-good">Хорошо</p>
+                </div>
+                <p class="calls__item">12:06</p>
+              </div>
+              <div class="calls__filter">
+                <img
+                  src="./img/icons/blue-call.svg"
+                  alt="call"
+                  class="calls_icon"
+                />
+                <p class="calls__item">17:50</p>
+                <div class="calls__info">
+                  <img
+                    src="./img/calls/avatar.png"
+                    alt="calls__user"
+                    class="calls__user"
+                  />
+                  <img src="./img/icons/web.svg" alt="web" class="calls__web" />
+                </div>
+                <p class="calls__item">+7 (987) 567-17-12</p>
+                <p class="calls__source">Rabota.ru</p>
+                <div class="calls__review">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="28"
+                    height="8"
+                    viewBox="0 0 28 8"
+                    fill="none"
+                    class="calls__review-circles"
+                  >
+                    <circle cx="4" cy="4" r="4" fill="#EA1A4F" />
+                  </svg>
+                  <p class="calls__review-status-bad">Плохо</p>
+                </div>
+                <p class="calls__item">12:06</p>
+              </div>
+              <div class="calls__filter">
+                <img
+                  src="./img/icons/blue-call.svg"
+                  alt="call"
+                  class="calls_icon"
+                />
+                <p class="calls__item">16:20</p>
+                <img
+                  src="./img/calls/avatar3.png"
+                  alt="calls__user"
+                  class="calls__user"
+                />
+                <div class="calls__contact">
+                  <p class="calls__name">Константиний Константинопольский</p>
+                  <p class="calls__subtitle">ООО «Фестивальный эффект»</p>
+                </div>
+                <p class="calls__source">Санкт-Петербург</p>
+                <span class="empty"></span>
+                <p class="calls__item">12:06</p>
+              </div>
+              <div class="calls__filter">
+                <img
+                  src="./img/icons/blue-call.svg"
+                  alt="call"
+                  class="calls_icon"
+                />
+                <p class="calls__item">16:17</p>
+                <img
+                  src="./img/calls/avatar.png"
+                  alt="calls__user"
+                  class="calls__user"
+                />
+                <p class="calls__item">+7 (913) 866-69-96</p>
+                <p class="calls__source">Google</p>
+                <div class="calls__review">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="28"
+                    height="8"
+                    viewBox="0 0 28 8"
+                    fill="none"
+                    class="calls__review-circles"
+                  >
+                    <circle cx="4" cy="4" r="4" fill="#EA1A4F" />
+                  </svg>
+                  <p class="calls__review-status-bad">Плохо</p>
+                </div>
+                <p class="calls__item">05:06</p>
+              </div>
+              <div class="calls__filter">
+                <img
+                  src="./img/icons/blue-call.svg"
+                  alt="call"
+                  class="calls_icon"
+                />
+                <p class="calls__item">15:40</p>
+                <img
+                  src="./img/calls/avatar.png"
+                  alt="calls__user"
+                  class="calls__user"
+                />
+                <p class="calls__item">+7 (954) 533-17-88</p>
+                <p class="calls__source">Yandex</p>
+                <div class="calls__review">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="28"
+                    height="8"
+                    viewBox="0 0 28 8"
+                    fill="none"
+                    class="calls__review-circles"
+                  >
+                    <circle cx="4" cy="4" r="4" fill="#EA1A4F" />
+                  </svg>
+                  <p class="calls__review-status-bad">Плохо</p>
+                </div>
+                <p class="calls__item">12:06</p>
+              </div>
+              <div class="calls__filter">
+                <img
+                  src="./img/icons/red-call-down.svg"
+                  alt="call"
+                  class="calls_icon"
+                />
+                <p class="calls__item">15:32</p>
+                <img
+                  src="./img/calls/avatar3.png"
+                  alt="calls__user"
+                  class="calls__user"
+                />
+                <div class="calls__contact">
+                  <p class="calls__name">Алексей</p>
+                  <p class="calls__subtitle">+7 (912) 587-19-34</p>
+                </div>
+                <p class="calls__source">Санкт-Петербург</p>
+                <span class="empty"></span>
+                <span class="empty"></span>
+              </div>
+              <div class="calls__filter">
+                <img
+                  src="./img/icons/blue-call.svg"
+                  alt="call"
+                  class="calls_icon"
+                />
+                <p class="calls__item">15:32</p>
+                <img
+                  src="./img/calls/avatar3.png"
+                  alt="calls__user"
+                  class="calls__user"
+                />
+                <p class="calls__item">+7 (912) 587-19-34</p>
+                <p class="calls__source">
+                  Санкт-Петербург источник в три строки, кто-то так пишет, ну
+                  ладно, но некрасиво
+                </p>
+                <span class="empty"></span>
+                <p class="calls__item">12:06</p>
+              </div>
+              <div class="calls__filter">
+                <img
+                  src="./img/icons/blue-call.svg"
+                  alt="call"
+                  class="calls_icon"
+                />
+                <p class="calls__item">15:21</p>
+                <img
+                  src="./img/calls/avatar.png"
+                  alt="calls__user"
+                  class="calls__user"
+                />
+                <p class="calls__item">+7 (913) 866-69-96</p>
+                <p class="calls__source">Google</p>
+                <div class="calls__review">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="28"
+                    height="8"
+                    viewBox="0 0 28 8"
+                    fill="none"
+                    class="calls__review-circles"
+                  >
+                    <circle cx="4" cy="4" r="4" fill="#28A879" />
+                    <circle cx="14" cy="4" r="4" fill="#28A879" />
+                    <circle cx="24" cy="4" r="4" fill="#28A879" />
+                  </svg>
+                  <p class="calls__review-status-great">Отлично</p>
+                </div>
+                <p class="calls__item">04:06</p>
+              </div>
+              <div class="calls__filter">
+                <img
+                  src="./img/icons/blue-call.svg"
+                  alt="call"
+                  class="calls_icon"
+                />
+                <p class="calls__item">15:12</p>
+                <img
+                  src="./img/calls/avatar.png"
+                  alt="calls__user"
+                  class="calls__user"
+                />
+                <p class="calls__item">+7 (913) 866-69-96</p>
+                <p class="calls__source">Google</p>
+                <div class="calls__review">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="28"
+                    height="8"
+                    viewBox="0 0 28 8"
+                    fill="none"
+                    class="calls__review-circles"
+                  >
+                    <circle cx="4" cy="4" r="4" fill="#ADBFDF" />
+                    <circle cx="14" cy="4" r="4" fill="#ADBFDF" />
+                  </svg>
+                  <p class="calls__review-status-good">Хорошо</p>
+                </div>
+                <p class="calls__item">12:06</p>
+              </div>
+              <div class="calls__filter">
+                <img
+                  src="./img/icons/blue-call.svg"
+                  alt="call"
+                  class="calls_icon"
+                />
+                <p class="calls__item">15:11</p>
+                <img
+                  src="./img/calls/avatar.png"
+                  alt="calls__user"
+                  class="calls__user"
+                />
+                <p class="calls__item">+7 (954) 533-17-88</p>
+                <p class="calls__source">Yandex</p>
+                <div class="calls__review">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="28"
+                    height="8"
+                    viewBox="0 0 28 8"
+                    fill="none"
+                    class="calls__review-circles"
+                  >
+                    <circle cx="4" cy="4" r="4" fill="#28A879" />
+                    <circle cx="14" cy="4" r="4" fill="#28A879" />
+                    <circle cx="24" cy="4" r="4" fill="#28A879" />
+                  </svg>
+                  <p class="calls__review-status-great">Отлично</p>
+                </div>
+                <p class="calls__item">12:06</p>
+              </div>
+              <div class="calls__filter">
+                <img
+                  src="./img/icons/blue-call.svg"
+                  alt="call"
+                  class="calls_icon"
+                />
+                <p class="calls__item">14:00</p>
+                <img
+                  src="./img/calls/avatar.png"
+                  alt="calls__user"
+                  class="calls__user"
+                />
+                <p class="calls__item">+7 (954) 533-17-88</p>
+                <p class="calls__source">Yandex</p>
+                <div class="calls__review">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="28"
+                    height="8"
+                    viewBox="0 0 28 8"
+                    fill="none"
+                    class="calls__review-circles"
+                  >
+                    <circle cx="4" cy="4" r="4" fill="#EA1A4F" />
+                  </svg>
+                  <p class="calls__review-status-bad">Плохо</p>
+                </div>
+                <p class="calls__item">03:06</p>
+              </div>
+              <p class="calls__yesterday">
+                вчера <sup class="calls__yesterday-amount">67</sup>
+              </p>
+              <div class="calls__filter">
+                <img
+                  src="./img/icons/blue-call.svg"
+                  alt="call"
+                  class="calls_icon"
+                />
+                <p class="calls__item">19:00</p>
+                <img
+                  src="./img/calls/avatar.png"
+                  alt="calls__user"
+                  class="calls__user"
+                />
+                <p class="calls__item">+7 (987) 567-17-12</p>
+                <p class="calls__source">Rabota.ru</p>
+                <div class="calls__review">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="28"
+                    height="8"
+                    viewBox="0 0 28 8"
+                    fill="none"
+                    class="calls__review-circles"
+                  >
+                    <circle cx="4" cy="4" r="4" fill="#28A879" />
+                    <circle cx="14" cy="4" r="4" fill="#28A879" />
+                    <circle cx="24" cy="4" r="4" fill="#28A879" />
+                  </svg>
+                  <p class="calls__review-status-great">Отлично</p>
+                </div>
+                <p class="calls__item">00:06</p>
+              </div>
+              <div class="calls__filter">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  class="calls__icon"
+                >
+                  <path
+                    d="M5.99999 17.3447L7.17703 18.5217L16.8522 8.8466V14.3478H18.5217V5.99999L10.1739 5.99999V7.66955L15.6751 7.66955L5.99999 17.3447Z"
+                    fill="#EA1A4F"
+                  />
+                </svg>
+                <p class="calls__item">18:00</p>
+                <img
+                  src="./img/calls/avatar.png"
+                  alt="calls__user"
+                  class="calls__user"
+                />
+
+                <p class="calls__item">+7 (987) 567-17-12</p>
+              </div>
+              <div class="calls__filter">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  class="calls__icon"
+                >
+                  <path
+                    d="M5.99999 17.3447L7.17703 18.5217L16.8522 8.8466V14.3478H18.5217V5.99999L10.1739 5.99999V7.66955L15.6751 7.66955L5.99999 17.3447Z"
+                    fill="#28A879"
+                  />
+                </svg>
+                <p class="calls__item">18:00</p>
+                <div class="calls__info">
+                  <img
+                    src="./img/calls/avatar.png"
+                    alt="calls__user"
+                    class="calls__user"
+                  />
+                  <img src="./img/icons/web.svg" alt="web" class="calls__web" />
+                </div>
+                <p class="calls__item">+7 (987) 567-17-12</p>
+                <span class="empty"></span>
+                <span class="empty"></span>
+                <p class="calls__item">12:06</p>
+              </div>
+              <div class="calls__filter">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  class="calls__icon"
+                >
+                  <path
+                    d="M5.99999 17.3447L7.17703 18.5217L16.8522 8.8466V14.3478H18.5217V5.99999L10.1739 5.99999V7.66955L15.6751 7.66955L5.99999 17.3447Z"
+                    fill="#28A879"
+                  />
+                </svg>
+                <p class="calls__item">18:00</p>
+                <img
+                  src="./img/calls/avatar.png"
+                  alt="calls__user"
+                  class="calls__user"
+                />
+
+                <p class="calls__item">+7 (987) 567-17-12</p>
+                <span class="empty"></span>
+                <span class="empty"></span>
+                <p class="calls__item">12:06</p>
+              </div>
+              <div class="calls__filter">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M18.5217 7.17704L17.3447 6L7.66957 15.6751V10.1739H6V18.5217H14.3478V16.8522H8.84661L18.5217 7.17704Z"
+                    fill="#005FF8"
+                  />
+                </svg>
+                <p class="calls__item">16:33</p>
+                <img
+                  src="./img/calls/avatar2.png"
+                  alt="calls__user"
+                  class="calls__user"
+                />
+                <p class="calls__item">+7 (951) 623-22-15</p>
+                <p class="calls__source">Rabota.ru</p>
+                <div class="calls__review">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="28"
+                    height="8"
+                    viewBox="0 0 28 8"
+                    fill="none"
+                    class="calls__review-circles"
+                  >
+                    <circle cx="4" cy="4" r="4" fill="#28A879" />
+                    <circle cx="14" cy="4" r="4" fill="#28A879" />
+                    <circle cx="24" cy="4" r="4" fill="#28A879" />
+                  </svg>
+                  <p class="calls__review-status-great">Отлично</p>
+                </div>
+                <p class="calls__item">12:06</p>
+              </div>
+              <div class="calls__filter">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  class="calls__icon"
+                >
+                  <path
+                    d="M5.99999 17.3447L7.17703 18.5217L16.8522 8.8466V14.3478H18.5217V5.99999L10.1739 5.99999V7.66955L15.6751 7.66955L5.99999 17.3447Z"
+                    fill="#28A879"
+                  />
+                </svg>
+                <p class="calls__item">16:28</p>
+                <img
+                  src="./img/calls/avatar.png"
+                  alt="calls__user"
+                  class="calls__user"
+                />
+
+                <p class="calls__item">+7 (987) 567-17-12</p>
+                <span class="empty"></span>
+                <span class="empty"></span>
+                <p class="calls__item">12:06</p>
+              </div>
+              <div class="calls__filter">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M18.5217 7.17704L17.3447 6L7.66957 15.6751V10.1739H6V18.5217H14.3478V16.8522H8.84661L18.5217 7.17704Z"
+                    fill="#005FF8"
+                  />
+                </svg>
+                <p class="calls__item">16:33</p>
+                <img
+                  src="./img/calls/avatar.png"
+                  alt="calls__user"
+                  class="calls__user"
+                />
+                <p class="calls__item">+7 (951) 623-22-15</p>
+                <p class="calls__source">Rabota.ru</p>
+                <div class="calls__review">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="28"
+                    height="8"
+                    viewBox="0 0 28 8"
+                    fill="none"
+                    class="calls__review-circles"
+                  >
+                    <circle cx="4" cy="4" r="4" fill="#28A879" />
+                    <circle cx="14" cy="4" r="4" fill="#28A879" />
+                    <circle cx="24" cy="4" r="4" fill="#28A879" />
+                  </svg>
+                  <p class="calls__review-status-great">Отлично</p>
+                </div>
+                <p class="calls__item">12:06</p>
+              </div>
+              <div class="calls__filter">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M18.5217 7.17704L17.3447 6L7.66957 15.6751V10.1739H6V18.5217H14.3478V16.8522H8.84661L18.5217 7.17704Z"
+                    fill="#005FF8"
+                  />
+                </svg>
+                <p class="calls__item">16:33</p>
+                <img
+                  src="./img/calls/avatar.png"
+                  alt="calls__user"
+                  class="calls__user"
+                />
+                <p class="calls__item">+7 (951) 623-22-15</p>
+                <p class="calls__source">Rabota.ru</p>
+                <div class="calls__review">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="28"
+                    height="8"
+                    viewBox="0 0 28 8"
+                    fill="none"
+                    class="calls__review-circles"
+                  >
+                    <circle cx="4" cy="4" r="4" fill="#28A879" />
+                    <circle cx="14" cy="4" r="4" fill="#28A879" />
+                    <circle cx="24" cy="4" r="4" fill="#28A879" />
+                  </svg>
+                  <p class="calls__review-status-great">Отлично</p>
+                </div>
+                <p class="calls__item">12:06</p>
+              </div>
+              <div class="calls__filter">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M18.5217 7.17704L17.3447 6L7.66957 15.6751V10.1739H6V18.5217H14.3478V16.8522H8.84661L18.5217 7.17704Z"
+                    fill="#005FF8"
+                  />
+                </svg>
+                <p class="calls__item">16:33</p>
+                <img
+                  src="./img/calls/avatar.png"
+                  alt="calls__user"
+                  class="calls__user"
+                />
+                <p class="calls__item">+7 (951) 623-22-15</p>
+                <p class="calls__source">Yandex</p>
+                <div class="calls__review">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="28"
+                    height="8"
+                    viewBox="0 0 28 8"
+                    fill="none"
+                    class="calls__review-circles"
+                  >
+                    <circle cx="4" cy="4" r="4" fill="#28A879" />
+                    <circle cx="14" cy="4" r="4" fill="#28A879" />
+                    <circle cx="24" cy="4" r="4" fill="#28A879" />
+                  </svg>
+                  <p class="calls__review-status-great">Отлично</p>
+                </div>
+                <p class="calls__item">12:06</p>
+              </div>
+              <div class="calls__filter">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M18.5217 7.17704L17.3447 6L7.66957 15.6751V10.1739H6V18.5217H14.3478V16.8522H8.84661L18.5217 7.17704Z"
+                    fill="#005FF8"
+                  />
+                </svg>
+                <p class="calls__item">16:33</p>
+                <img
+                  src="./img/calls/avatar.png"
+                  alt="calls__user"
+                  class="calls__user"
+                />
+                <p class="calls__item">+7 (951) 623-22-15</p>
+                <p class="calls__source">Google</p>
+                <div class="calls__review">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="28"
+                    height="8"
+                    viewBox="0 0 28 8"
+                    fill="none"
+                    class="calls__review-circles"
+                  >
+                    <circle cx="4" cy="4" r="4" fill="#28A879" />
+                    <circle cx="14" cy="4" r="4" fill="#28A879" />
+                    <circle cx="24" cy="4" r="4" fill="#28A879" />
+                  </svg>
+                  <p class="calls__review-status-great">Отлично</p>
+                </div>
+                <p class="calls__item">12:06</p>
+              </div>
+              <div class="calls__filter">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M18.5217 7.17704L17.3447 6L7.66957 15.6751V10.1739H6V18.5217H14.3478V16.8522H8.84661L18.5217 7.17704Z"
+                    fill="#005FF8"
+                  />
+                </svg>
+                <p class="calls__item">16:33</p>
+                <img
+                  src="./img/calls/avatar.png"
+                  alt="calls__user"
+                  class="calls__user"
+                />
+                <p class="calls__item">+7 (951) 623-22-15</p>
+                <p class="calls__source">Google</p>
+                <div class="calls__review">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="28"
+                    height="8"
+                    viewBox="0 0 28 8"
+                    fill="none"
+                    class="calls__review-circles"
+                  >
+                    <circle cx="4" cy="4" r="4" fill="#28A879" />
+                    <circle cx="14" cy="4" r="4" fill="#28A879" />
+                    <circle cx="24" cy="4" r="4" fill="#28A879" />
+                  </svg>
+                  <p class="calls__review-status-great">Отлично</p>
+                </div>
+                <p class="calls__item">12:06</p>
+              </div>
+              <div class="calls__filter">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M18.5217 7.17704L17.3447 6L7.66957 15.6751V10.1739H6V18.5217H14.3478V16.8522H8.84661L18.5217 7.17704Z"
+                    fill="#005FF8"
+                  />
+                </svg>
+                <p class="calls__item">16:33</p>
+                <img
+                  src="./img/calls/avatar.png"
+                  alt="calls__user"
+                  class="calls__user"
+                />
+                <p class="calls__item">+7 (951) 623-22-15</p>
+                <p class="calls__source">Yandex</p>
+                <div class="calls__review">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="28"
+                    height="8"
+                    viewBox="0 0 28 8"
+                    fill="none"
+                    class="calls__review-circles"
+                  >
+                    <circle cx="4" cy="4" r="4" fill="#28A879" />
+                    <circle cx="14" cy="4" r="4" fill="#28A879" />
+                    <circle cx="24" cy="4" r="4" fill="#28A879" />
+                  </svg>
+                  <p class="calls__review-status-great">Отлично</p>
+                </div>
+                <p class="calls__item">12:06</p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
