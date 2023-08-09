@@ -42,34 +42,44 @@
     bottom: 35%;
   }
 
+  &__filter-chk {
+    position: relative;
+    right: 20px;
+    &::after {
+      content: url(../../img/icons/arrow-down.svg);
+      position: absolute;
+      bottom: -10px;
+      right: -6px;
+    }
+
+    &:checked ~ .content__filter-dropdown-menu {
+      opacity: 1;
+    }
+  }
+
   &__bottom {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
 
-  &__filter-list {
-    position: relative;
-  }
-
   &__filter-item {
-    display: flex;
-    ::after {
-      content: url(../../img/icons/arrow-down.svg);
-      top: 0;
-      left: 0;
-      display: block;
-      width: 100%;
-      background-color: transparent;
+    font-family: "SF Pro Display", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #899cb1;
+    &:checked {
+      color: #002cfb;
     }
   }
 
-  &__filter-name {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 148%;
-    color: #5e7793;
-    opacity: 0.87;
+  &__filter {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #899cb1;
+    font-family: "SF Pro Display", sans-serif;
   }
 
   &__arrow-button {
@@ -95,6 +105,9 @@
     line-height: 148%;
     color: #899cb1;
     margin-right: 10px;
+    &:hover .content__balance-amount {
+      color: #0024cb;
+    }
   }
 
   &__balance-wrapper {
@@ -104,6 +117,7 @@
     background: #fff;
     padding: 8px 12px;
     margin-right: 48px;
+    cursor: pointer;
   }
 
   &__balance-amount {
@@ -116,5 +130,14 @@
   &__filter-list {
     display: flex;
     gap: 32px;
+    align-items: center;
+    position: relative;
+  }
+
+  &__filter-review-bad {
+    border-radius: 4px;
+    border: 1px solid #ea1a4f;
+    background: #fee9ef;
+    padding: 6px 8px;
   }
 }

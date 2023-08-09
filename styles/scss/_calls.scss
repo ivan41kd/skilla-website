@@ -3,7 +3,6 @@
   border-radius: 8px;
   box-shadow: 0px 4px 5px 0px #e9edf3;
   background: #fff;
-  overflow: scroll;
   height: 73vh;
   overflow-x: hidden;
 
@@ -13,18 +12,21 @@
     padding: 20px 0;
     border-bottom: 1px solid rgba(234, 240, 250, 1);
     align-items: center;
+    transition: 0.3s;
+    cursor: pointer;
     &:nth-child(17) {
       padding-bottom: 0;
       border-bottom: none;
     }
 
-    &:nth-last-child(1){
-      border-bottom: none;
-      padding-bottom:0 ;
+
+    &:hover {
+      background-color: rgba(234, 240, 250, 1);
+      transition: 0.3s;
     }
   }
 
-  &__container{
+  &__container {
     padding: 0 40px;
   }
 
@@ -98,6 +100,14 @@
     display: flex;
     justify-content: center;
     width: 80%;
+    transition: 0.3s;
+
+    &:hover {
+      border: 1px solid #0024cb;
+      background: #0024cb;
+      transition: 0.3s;
+      color: white;
+    }
   }
 
   &__info {

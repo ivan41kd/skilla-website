@@ -178,14 +178,29 @@
                 <div class="header__bar bar-red"></div>
               </div>
             </div>
-            <button class="header__icon">
-              <img
-                src="./img/header/basic search.svg"
-                alt="search"
-                class="header__search-icon"
-              />
-            </button>
             <div class="header__right">
+              <div class="header__form">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="48"
+                  viewBox="0 0 32 48"
+                  fill="none"
+                  class="header__search-icon"
+                >
+                  <path
+                    d="M19.4351 26.0629H18.7124L18.4563 25.8159C19.3528 24.773 19.8925 23.4191 19.8925 21.9463C19.8925 18.6621 17.2304 16 13.9463 16C10.6621 16 8 18.6621 8 21.9463C8 25.2304 10.6621 27.8925 13.9463 27.8925C15.4191 27.8925 16.773 27.3528 17.8159 26.4563L18.0629 26.7124V27.4351L22.6369 32L24 30.6369L19.4351 26.0629ZM13.9463 26.0629C11.6684 26.0629 9.82962 24.2241 9.82962 21.9463C9.82962 19.6684 11.6684 17.8296 13.9463 17.8296C16.2241 17.8296 18.0629 19.6684 18.0629 21.9463C18.0629 24.2241 16.2241 26.0629 13.9463 26.0629Z"
+                    fill="#ADBFDF"
+                  />
+                </svg>
+
+                <input
+                  type="search"
+                  name=""
+                  id=""
+                  class="header__search-form"
+                />
+              </div>
               <div class="header__username">
                 <p class="header__name">ИП Сидорова Александра Михайловна</p>
                 <button class="header__arrow">
@@ -198,9 +213,259 @@
                   alt="avatar"
                   class="header__avatar"
                 />
-                <button class="header__arrow">
-                  <img src="./img/icons/arrow-down.svg" alt="select" />
-                </button>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_1_1808)">
+                    <path
+                      opacity="0.8"
+                      d="M7.41 8.59009L12 13.1701L16.59 8.59009L18 10.0001L12 16.0001L6 10.0001L7.41 8.59009Z"
+                      fill="#ADBFDF"
+                      class="header__arrow-user"
+                    />
+                  </g>  
+                </svg>
+                <input type="checkbox" name="" id="" class="header__chk" />
+                <div class="header__dropdown-menu">
+                  <div class="header__dropdown-wrapper">
+                    <div class="header__dropdown-top">
+                      <div class="header__dropdown-user-wrapper">
+                        <p class="header__dropdown-name">Упоров Кирилл</p>
+                        <input
+                          type="image"
+                          src="./img/icons/logout.svg"
+                          alt="logout"
+                          class="header__logout"
+                        />
+                      </div>
+
+                      <div class="header__dropdown-info">
+                        <p class="header__dropdown-jobtitle">Директор</p>
+                        <img
+                          src="./img/icons/ellipse.svg"
+                          alt="ellipse"
+                          class="header__ellipse"
+                        />
+                        <p class="header__dropdown-city">Санкт-Петербург</p>
+                      </div>
+                      <div class="header__dropdown-contacts">
+                        <div class="header__dropdown-number-wrapper">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            viewBox="0 0 16 16"
+                            fill="none"
+                            class="header__dropdown-number-icon"
+                          >
+                            <g clip-path="url(#clip0_17167_2367)">
+                              <path
+                                d="M4.36 3.33333C4.4 3.92667 4.5 4.50667 4.66 5.06L3.86 5.86C3.58667 5.06 3.41333 4.21333 3.35333 3.33333H4.36ZM10.9333 11.3467C11.5 11.5067 12.08 11.6067 12.6667 11.6467V12.64C11.7867 12.58 10.94 12.4067 10.1333 12.14L10.9333 11.3467ZM5 2H2.66667C2.3 2 2 2.3 2 2.66667C2 8.92667 7.07333 14 13.3333 14C13.7 14 14 13.7 14 13.3333V11.0067C14 10.64 13.7 10.34 13.3333 10.34C12.5067 10.34 11.7 10.2067 10.9533 9.96C10.8867 9.93333 10.8133 9.92667 10.7467 9.92667C10.5733 9.92667 10.4067 9.99333 10.2733 10.12L8.80667 11.5867C6.92 10.62 5.37333 9.08 4.41333 7.19333L5.88 5.72667C6.06667 5.54 6.12 5.28 6.04667 5.04667C5.8 4.3 5.66667 3.5 5.66667 2.66667C5.66667 2.3 5.36667 2 5 2Z"
+                                fill="#ADBFDF"
+                              />
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_17167_2367">
+                                <rect width="16" height="16" fill="white" />
+                              </clipPath>
+                            </defs>
+                          </svg>
+                          <p class="header__dropdown-number">
+                            8 (800) 333-17-21
+                          </p>
+                        </div>
+                        <div class="header__dropdown-mail-wrapper">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            viewBox="0 0 16 16"
+                            fill="none"
+                            class="header__dropdown-mail-icon"
+                          >
+                            <g clip-path="url(#clip0_17167_2364)">
+                              <path
+                                d="M13.3334 2.66666H2.66671C1.93337 2.66666 1.34004 3.26666 1.34004 3.99999L1.33337 12C1.33337 12.7333 1.93337 13.3333 2.66671 13.3333H13.3334C14.0667 13.3333 14.6667 12.7333 14.6667 12V3.99999C14.6667 3.26666 14.0667 2.66666 13.3334 2.66666ZM13.3334 12H2.66671V5.33332L8.00004 8.66666L13.3334 5.33332V12ZM8.00004 7.33332L2.66671 3.99999H13.3334L8.00004 7.33332Z"
+                                fill="#ADBFDF"
+                              />
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_17167_2364">
+                                <rect width="16" height="16" fill="white" />
+                              </clipPath>
+                            </defs>
+                          </svg>
+                          <p class="header__dropdown-mail">hi@skilla.ru</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="header__dropdown-userlist">
+                      <p class="header__dropdown-job">Операторы</p>
+                      <div class="header__dropdown-user">
+                        <div class="header__dropdown-userinfo">
+                          <img
+                            src="./img/header/dropdown-avatar.png"
+                            alt="avatar"
+                            class="header__dropdown-avatar"
+                          />
+                          <p class="header__dropdown-username">Мирон Батонов</p>
+                        </div>
+                        <input
+                          type="image"
+                          src="./img/icons/login.svg"
+                          alt="login"
+                          class="header__login"
+                        />
+                      </div>
+                      <div class="header__dropdown-user">
+                        <div class="header__dropdown-userinfo">
+                          <img
+                            src="./img/header/dropdown-avatar.png"
+                            alt="avatar"
+                            class="header__dropdown-avatar"
+                          />
+                          <p class="header__dropdown-username">Алексей Ильин</p>
+                        </div>
+                        <input
+                          type="image"
+                          src="./img/icons/login.svg"
+                          alt="login"
+                          class="header__login"
+                        />
+                      </div>
+                      <div class="header__dropdown-user">
+                        <div class="header__dropdown-userinfo">
+                          <img
+                            src="./img/header/dropdown-avatar.png"
+                            alt="avatar"
+                            class="header__dropdown-avatar"
+                          />
+                          <p class="header__dropdown-username">
+                            Милана Константинопольская
+                          </p>
+                        </div>
+                        <input
+                          type="image"
+                          src="./img/icons/login.svg"
+                          alt="login"
+                          class="header__login"
+                        />
+                      </div>
+                      <p class="header__dropdown-job">Логисты</p>
+                      <div class="header__dropdown-user">
+                        <div class="header__dropdown-userinfo">
+                          <img
+                            src="./img/header/dropdown-avatar.png"
+                            alt="avatar"
+                            class="header__dropdown-avatar"
+                          />
+                          <p class="header__dropdown-username">
+                            Александра Сизых
+                          </p>
+                        </div>
+                        <input
+                          type="image"
+                          src="./img/icons/login.svg"
+                          alt="login"
+                          class="header__login"
+                        />
+                      </div>
+                      <div class="header__dropdown-user">
+                        <div class="header__dropdown-userinfo">
+                          <img
+                            src="./img/header/dropdown-avatar.png"
+                            alt="avatar"
+                            class="header__dropdown-avatar"
+                          />
+                          <p class="header__dropdown-username">Илья Алексеев</p>
+                        </div>
+                        <input
+                          type="image"
+                          src="./img/icons/login.svg"
+                          alt="login"
+                          class="header__login"
+                        />
+                      </div>
+                      <div class="header__dropdown-user">
+                        <div class="header__dropdown-userinfo">
+                          <img
+                            src="./img/header/dropdown-avatar.png"
+                            alt="avatar"
+                            class="header__dropdown-avatar"
+                          />
+                          <p class="header__dropdown-username">
+                            Владимир Петров
+                          </p>
+                        </div>
+                        <input
+                          type="image"
+                          src="./img/icons/login.svg"
+                          alt="login"
+                          class="header__login"
+                        />
+                      </div>
+                      <p class="header__dropdown-job">Бухгалтеры</p>
+                      <div class="header__dropdown-user">
+                        <div class="header__dropdown-userinfo">
+                          <img
+                            src="./img/header/dropdown-avatar.png"
+                            alt="avatar"
+                            class="header__dropdown-avatar"
+                          />
+                          <p class="header__dropdown-username">
+                            Полина Калинина
+                          </p>
+                        </div>
+                        <input
+                          type="image"
+                          src="./img/icons/login.svg"
+                          alt="login"
+                          class="header__login"
+                        />
+                      </div>
+                      <div class="header__dropdown-user">
+                        <div class="header__dropdown-userinfo">
+                          <img
+                            src="./img/header/dropdown-avatar.png"
+                            alt="avatar"
+                            class="header__dropdown-avatar"
+                          />
+                          <p class="header__dropdown-username">
+                            Наталья Натальева
+                          </p>
+                        </div>
+                        <input
+                          type="image"
+                          src="./img/icons/login.svg"
+                          alt="login"
+                          class="header__login"
+                        />
+                      </div>
+                      <div class="header__dropdown-user">
+                        <div class="header__dropdown-userinfo">
+                          <img
+                            src="./img/header/dropdown-avatar.png"
+                            alt="avatar"
+                            class="header__dropdown-avatar"
+                          />
+                          <p class="header__dropdown-username">
+                            Константин Константинопольский
+                          </p>
+                        </div>
+                        <input
+                          type="image"
+                          src="./img/icons/login.svg"
+                          alt="login"
+                          class="header__login"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -216,19 +481,12 @@
                   Баланс:
                   <span class="content__balance-amount">272₽</span>
                 </p>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  class="content__balance-icon"
-                >
-                  <path
-                    d="M12 0C5.376 0 0 5.376 0 12C0 18.624 5.376 24 12 24C18.624 24 24 18.624 24 12C24 5.376 18.624 0 12 0ZM18 13.2H13.2V18H10.8V13.2H6V10.8H10.8V6H13.2V10.8H18V13.2Z"
-                    fill="#005FF8"
-                  />
-                </svg>
+                <input
+                  type="image"
+                  src="./img/icons/balance-plus.svg"
+                  alt="balance-plus"
+                  class="content__balance-button"
+                />
               </div>
 
               <div class="content__calendar">
@@ -308,34 +566,80 @@
                 />
               </div>
               <div class="content__filter-list">
-                <select class="content__filter-item">
-                  <option class="content__filter-name">Все типы</option>
-                  <option class="content__filter-name">Входящие</option>
+                <select name="" id="" class="content__filter">
+                  <option value="1" class="content__filter-item">
+                    Входящие
+                  </option>
+                  <option value="2" class="content__filter-item">
+                    Исходящие
+                  </option>
                 </select>
-                <select class="content__filter-item">
-                  <option class="content__filter-name">Все сотрудники</option>
-                  <option class="content__filter-name">Константин К.</option>
-                  <option class="content__filter-name">Константин К.</option>
+                <select name="" id="" class="content__filter">
+                  <option value="1" class="content__filter-item">
+                    Все сотрудники
+                  </option>
+                  <option value="2" class="content__filter-item">
+                    Константин К.
+                  </option>
+                  <option value="3" class="content__filter-item">
+                    Полина З.
+                  </option>
                 </select>
-                <select class="content__filter-item">
-                  <option class="content__filter-name">Все сотрудники</option>
-                  <option class="content__filter-name">Константин К.</option>
-                  <option class="content__filter-name">Константин К.</option>
+                <select name="" id="" class="content__filter">
+                  <option value="1" class="content__filter-item">
+                    Все звонки
+                  </option>
+                  <option value="2" class="content__filter-item">
+                    Все клиенты
+                  </option>
+                  <option value="3" class="content__filter-item">
+                    Новые клиенты
+                  </option>
+                  <option value="4" class="content__filter-item">
+                    Все исполнители
+                  </option>
+                  <option value="5" class="content__filter-item">
+                    Через приложение
+                  </option>
+                  <option value="6" class="content__filter-item">
+                    Прочие звонки
+                  </option>
                 </select>
-                <select class="content__filter-item">
-                  <option class="content__filter-name">Все сотрудники</option>
-                  <option class="content__filter-name">Константин К.</option>
-                  <option class="content__filter-name">Константин К.</option>
+                <select name="" id="" class="content__filter">
+                  <option value="1" class="content__filter-item">
+                    Все источники
+                  </option>
                 </select>
-                <select class="content__filter-item">
-                  <option class="content__filter-name">Все сотрудники</option>
-                  <option class="content__filter-name">Константин К.</option>
-                  <option class="content__filter-name">Константин К.</option>
+                <select name="" id="" class="content__filter">
+                  <option value="1" class="content__filter-item">
+                    Все оценки
+                  </option>
+                  <option value="2" class="content__filter-item">
+                    Распознать
+                  </option>
+                  <option value="3" class="content__filter-item">
+                    Скрипт не использован
+                  </option>
                 </select>
-                <select class="content__filter-item">
-                  <option class="content__filter-name">Все сотрудники</option>
-                  <option class="content__filter-name">Константин К.</option>
-                  <option class="content__filter-name">Константин К.</option>
+                <select name="" id="" class="content__filter">
+                  <option value="1" class="content__filter-item">
+                    Все ошибки
+                  </option>
+                  <option value="2" class="content__filter-item">
+                    Приветствие
+                  </option>
+                  <option value="3" class="content__filter-item">Имя</option>
+                  <option value="4" class="content__filter-item">Цена</option>
+                  <option value="5" class="content__filter-item">Скидка</option>
+                  <option value="6" class="content__filter-item">
+                    Предзаказ
+                  </option>
+                  <option value="7" class="content__filter-item">
+                    Благодарность
+                  </option>
+                  <option value="8" class="content__filter-item">
+                    Стоп слова
+                  </option>
                 </select>
               </div>
             </div>
